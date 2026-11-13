@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Tendboat helps AI coding agents find vulnerabilities and trace risky data flows across languages, files, and service boundaries."
+    >
+    <link rel="canonical" href="https://tendboat.com/">
+    <title>Tendboat — Security analysis for AI coding agents</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #07110f;
+        --panel: #0d1d19;
+        --text: #f3f7f3;
+        --muted: #a7bbb3;
+        --accent: #7ff2b1;
+        --line: rgba(255, 255, 255, 0.12);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        min-height: 100vh;
+        margin: 0;
+        background:
+          radial-gradient(circle at 75% 20%, rgba(65, 190, 131, 0.18), transparent 34rem),
+          var(--bg);
+        color: var(--text);
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+
+      main {
+        width: min(68rem, calc(100% - 2rem));
+        min-height: 100vh;
+        margin: 0 auto;
+        display: grid;
+        align-content: center;
+        gap: 3rem;
+        padding: 4rem 0;
+      }
+
+      header {
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+        font-weight: 700;
+        letter-spacing: 0.02em;
+      }
+
+      .mark {
+        width: 2.25rem;
+        height: 2.25rem;
+        display: grid;
+        place-items: center;
+        border: 1px solid var(--line);
+        border-radius: 50%;
+        color: var(--accent);
+      }
+
+      section {
+        max-width: 54rem;
+      }
+
+      .eyebrow {
+        margin: 0 0 1rem;
+        color: var(--accent);
+        font-size: 0.8rem;
+        font-weight: 700;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        max-width: 14ch;
+        margin: 0;
+        font-size: clamp(3rem, 9vw, 6.75rem);
+        font-weight: 650;
+        letter-spacing: -0.065em;
+        line-height: 0.92;
+      }
+
+      .summary {
+        max-width: 42rem;
+        margin: 2rem 0 0;
+        color: var(--muted);
+        font-size: clamp(1.05rem, 2vw, 1.3rem);
+        line-height: 1.65;
+      }
+
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.8rem;
+        margin-top: 2rem;
+      }
+
+      a {
+        display: inline-flex;
+        align-items: center;
+        min-height: 2.9rem;
+        padding: 0.75rem 1.1rem;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        color: var(--text);
+        font-weight: 650;
+        text-decoration: none;
+        transition: border-color 160ms ease, background 160ms ease, color 160ms ease;
+      }
+
+      a:first-child {
+        border-color: var(--accent);
+        background: var(--accent);
+        color: #07110f;
+      }
+
+      a:hover,
+      a:focus-visible {
+        border-color: var(--accent);
+        outline: none;
+      }
+
+      .details {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        border-top: 1px solid var(--line);
+      }
+
+      .details p {
+        margin: 0;
+        padding: 1.1rem 1rem 0 0;
+        color: var(--muted);
+        font-size: 0.9rem;
+      }
+
+      .details strong {
+        display: block;
+        margin-bottom: 0.25rem;
+        color: var(--text);
+        font-size: 1rem;
+      }
+
+      @media (max-width: 42rem) {
+        .details {
+          grid-template-columns: 1fr;
+          gap: 0.8rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <span class="mark" aria-hidden="true">T</span>
+        Tendboat
+      </header>
+
+      <section>
+        <p class="eyebrow">Security analysis for AI coding agents</p>
+        <h1>Follow the flow. Find the risk.</h1>
+        <p class="summary">
+          Tendboat helps AI coding agents find vulnerabilities and trace risky data flows
+          across languages, files, and service boundaries.
+        </p>
+        <nav aria-label="Project links">
+          <a href="https://github.com/TendBoat/tendboat">View Tendboat on GitHub</a>
+          <a href="https://github.com/TendBoat/tendboat-agent-plugin">Agent plugin</a>
+        </nav>
+      </section>
+
+      <div class="details" aria-label="Tendboat capabilities">
+        <p><strong>Cross-language</strong>Trace flows beyond a single file or runtime.</p>
+        <p><strong>Agent-driven</strong>Keep security judgment with the coding agent.</p>
+        <p><strong>Actionable</strong>Turn analysis into reviewable findings and SARIF.</p>
+      </div>
+    </main>
+  </body>
+</html>
